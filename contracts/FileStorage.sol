@@ -7,7 +7,7 @@ pragma solidity ^0.8.9;
 contract FileStorage {
     //Event
     event FileUploaded(
-        uint256 fileId,
+        uint256 fileId,  
         string fileHash,
         uint256 fileSize,
         string fileType,
@@ -18,9 +18,9 @@ contract FileStorage {
 
     //File Struct
     struct File {
-        uint256 fileId;
-        string fileHash;
-        uint256 fileSize;
+        uint256 fileId; // serial no 
+        string fileHash; // IPFS hash
+        uint256 fileSize; 
         string fileType;
         string fileName;
         uint256 uploadTime;
