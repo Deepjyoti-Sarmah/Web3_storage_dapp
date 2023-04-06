@@ -6,14 +6,14 @@ import './index.css'
 
 import '@rainbow-me/rainbowkit/styles.css';
 
-import {getDefaultWallets, RainbowKitProvider} from '@rainbow-me/rainbowkit';
+import { getDefaultWallets, RainbowKitProvider } from '@rainbow-me/rainbowkit';
 import { configureChains, createClient, WagmiConfig } from 'wagmi';
 import { mainnet, polygonMumbai, optimism, arbitrum } from 'wagmi/chains';
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
 
 
-const {chains, provider} = configureChains(
+const { chains, provider } = configureChains(
   [polygonMumbai],
   [
     alchemyProvider({ apiKey: import.meta.env.REACT_APP_ALCHEMY_ID }),
@@ -21,9 +21,7 @@ const {chains, provider} = configureChains(
   ]
 );
 
-
-
-const {connectors} = getDefaultWallets({
+const { connectors } = getDefaultWallets({
   appName: 'FileStorage',
   chains
 });
