@@ -4,7 +4,6 @@ import App from './App'
 import './index.css'
 // require("dotenv").config();
 
-
 import '@rainbow-me/rainbowkit/styles.css';
 
 import {getDefaultWallets, RainbowKitProvider} from '@rainbow-me/rainbowkit';
