@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ["@rainbow-me/rainbowkit"],
+      external: ["@rainbow-me/rainbowkit", "web3.storage"],
     },
   },
 });
